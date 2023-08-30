@@ -5,23 +5,23 @@ import logging
 from logging.handlers import RotatingFileHandler
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6601011494:AAGMR0i5tlCKITms_7rr2LzZmmAieD_eQ58")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6072719403:AAGtJKb8zenC7RkNJ9SVwx8GoUnQe9N7jks")
 # TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "5872747581:AAH7_XPCOCEVfbgUhepjJWlcOmj8wjDTjBk")
 
 #Your API ID from my.telegram.org
-APP_ID = int(os.environ.get("APP_ID", "3393749"))
+APP_ID = int(os.environ.get("APP_ID", "25479482"))
 
 #Your API Hash from my.telegram.org
-API_HASH = os.environ.get("API_HASH", "a15a5954a1db54952eebd08ea6c68b71")
+API_HASH = os.environ.get("API_HASH", "6ab604ff91a73fb91cc6526818e28ab1")
 
 #Your db channel Id
-CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1001693231644"))
+CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-100"))
 
 #Your log channel Id
-LOG_ID = int(os.environ.get("LOG_ID", "-1001881799737"))
+LOG_ID = int(os.environ.get("LOG_ID", "-100"))
 
 #OWNER ID
-OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
+OWNER_ID = int(os.environ.get("OWNER_ID", "5736579519"))
 
 # #shortenr
 # API = environ.get('API','eedc409c6457b8c783019e990dde8fd531b58eca')
@@ -29,7 +29,7 @@ OWNER_ID = int(os.environ.get("OWNER_ID", "1061576483"))
 PORT = os.environ.get("PORT", "8080")
 
 #Database 
-DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://Jayanna:Jayanna2023@yash.tm1c2bd.mongodb.net/?retryWrites=true&w=majority")
+DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://kartik:Kartik8379@cluster0.zrpl3tc.mongodb.net/?retryWrites=true&w=majority")
 DB_NAME = os.environ.get("DATABASE_NAME", "New_Divya_Spandana")
 
 #force sub channel id, if you want enable force sub
@@ -41,7 +41,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "20"))
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\nI can store private files in Specified Channel and other users can access it from special link.")
 try:
     ADMINS=[]
-    for x in (os.environ.get("ADMINS", "1365052525 5963138883").split()):
+    for x in (os.environ.get("ADMINS", "5736579519 1068260479").split()):
         ADMINS.append(int(x))
 except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
@@ -53,8 +53,8 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", "<b><code>{filename}</code> \n\n𝐉𝐨𝐢𝐧 -> <a href='https://telegram.dog/link_serials'>𝐂𝐡𝐚𝐧𝐧𝐞𝐥</a></b>")
 
 #shortner
-SHORTLINK_URL = environ.get('SHORTLINK_URL', 'omegalinks.in')
-SHORTLINK_API = environ.get('SHORTLINK_API', '0af17d003ce7020eb85d2a54fe0f6ef50e770e40')
+SHORTLINK_URL = environ.get('SHORTLINK_URL', 'moneycase.link')
+SHORTLINK_API = environ.get('SHORTLINK_API', '')
 
 #set True if you want to prevent users from forwarding files from bot
 PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" else False
